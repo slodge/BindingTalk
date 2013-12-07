@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+      android:layout_marginTop="40dp"
+      android:textColor="#ffff00"
+        android:text="First Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/FirstNameEdit"
+        android:textSize="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text FirstName" />
+    <TextView
+      android:layout_marginTop="40dp"
+      android:textColor="#ffff00"
+        android:text="Second Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+  <EditText
+      android:id="@+id/SecondNameEdit"
+      android:textSize="40sp"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text SecondName" />
+  <TextView
+    android:layout_marginTop="40dp"
+    android:textColor="#ffff00"
+      android:text="Full Name"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/SecondNameEdit"
+      android:textSize="40sp"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text FullName" />
+  <Button
+        android:id="@+id/FullNameLabel"
+        android:textSize="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        local:MvxBind="Click Reset" />
+</LinearLayout>

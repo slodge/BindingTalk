@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Which shape:" />
+    <MvxSpinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        local:MvxBind="ItemsSource AllShapes;SelectedItem TheShape" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawn as:" />
+    <CustomDrawShapeView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        local:MvxBind="TheShape TheShape" />
+</LinearLayout>

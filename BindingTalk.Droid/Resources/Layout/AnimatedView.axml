@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Value:" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        local:MvxBind="Text Value" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Value: (animated)" />
+    <AnimatingTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        local:MvxBind="AnimatingText Value" />
+</LinearLayout>

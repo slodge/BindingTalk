@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1620619F-DF92-4525-B240-015E4808826B}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BindingTalk.Droid</RootNamespace>
+    <AssemblyName>BindingTalk.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <FodyPath>..\packages\Fody.1.18.0.0</FodyPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid.Fragging">
+      <HintPath>..\packages\MvvmCross.HotTuna.Droid.Fragging.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Droid.Fragging.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.FieldBinding">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.FieldBinding.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.FieldBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Color.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Color.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Color.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Color.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.FieldBinding">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.FieldBinding.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.FieldBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.MethodBinding">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.MethodBinding.3.0.14\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.MethodBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="GooglePlayServicesFroyoLib">
+      <HintPath>..\Components\googleplayservicesfroyo12-12.0.0\lib\android\GooglePlayServicesFroyoLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="mscorlib" />
+    <Reference Include="PropertyChanged">
+      <HintPath>..\packages\PropertyChanged.Fody.1.42.0.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\PropertyChanged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net">
+      <Private>True</Private>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.14\lib\MonoAndroid\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <Private>True</Private>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.14\lib\MonoAndroid\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization">
+      <Private>True</Private>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.14\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrap\ColorPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FieldBindingPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MethodBindingPluginBootstrap.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\FodySimpleViewModel.cs" />
+    <Compile Include="Views\2  More Controls\AnimatedView.cs" />
+    <Compile Include="Views\2  More Controls\ConvertersView.cs" />
+    <Compile Include="Views\2  More Controls\CustomControlView.cs" />
+    <Compile Include="Views\2  More Controls\FavoritesButtonBinding.cs" />
+    <Compile Include="Views\4 Rio and Tibet\MultiActivity.cs" />
+    <Compile Include="Views\4 Rio and Tibet\FodyActivity.cs" />
+    <Compile Include="Views\3 International\FrenchActivity.cs" />
+    <Compile Include="Views\2  More Controls\FullCommandView.cs" />
+    <Compile Include="Views\3 International\German2Activity.cs" />
+    <Compile Include="Views\3 International\GermanActivity.cs" />
+    <Compile Include="Views\5 Performance\Views.cs" />
+    <Compile Include="Views\HelperExtensionMethods.cs" />
+    <Compile Include="Views\2  More Controls\MappingActivity.cs" />
+    <Compile Include="Views\4 Rio and Tibet\NormalActivity.cs" />
+    <Compile Include="Views\2  More Controls\QuestionView.cs" />
+    <Compile Include="Views\2  More Controls\PathView.cs" />
+    <Compile Include="Views\1 First Principles\FirstPrinciplesView.cs" />
+    <Compile Include="ListView.cs" />
+    <Compile Include="Views\1 First Principles\FourthPrinciplesView.cs" />
+    <Compile Include="Views\1 First Principles\SecondPrinciplesView.cs" />
+    <Compile Include="ViewModels\SimpleViewModel.cs" />
+    <Compile Include="Views\4 Rio and Tibet\ThinnerActivity.cs" />
+    <Compile Include="Views\1 First Principles\ThirdPrinciplesView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fody.targets" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\Layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\Layout\FirstView.axml" />
+    <AndroidResource Include="Resources\Layout\FirstPrinciplesView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ThirdPrinciplesView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\FourthPrinciplesView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ListItem.axml" />
+    <AndroidResource Include="Resources\Layout\PathView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\ConvertersView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\AnimatedView.axml" />
+    <AndroidResource Include="Resources\Layout\QuestionView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\FullCommandView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\LanguageView.axml" />
+    <AndroidResource Include="Resources\Layout\Language2View.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MappingView.axml" />
+    <AndroidResource Include="Resources\Layout\CustomControlView.axml" />
+    <AndroidResource Include="Resources\Layout\ThinningView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\FavoritesView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\Speed1.axml" />
+    <AndroidResource Include="Resources\Layout\Speed2.axml" />
+    <AndroidResource Include="Resources\Layout\Speed3.axml" />
+    <AndroidResource Include="Resources\Layout\Speed4.axml" />
+    <AndroidResource Include="Resources\Layout\Speed5.axml" />
+    <AndroidResource Include="Resources\Layout\Speed6.axml" />
+    <AndroidResource Include="Resources\Layout\Speed7.axml" />
+    <AndroidResource Include="Resources\Layout\NormalView.axml" />
+    <AndroidResource Include="Resources\Layout\MultiView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FodyWeavers.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\Values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
+    <AndroidResource Include="Resources\Drawable\splash.png" />
+    <AndroidResource Include="Resources\Drawable\star_gold45.png" />
+    <AndroidResource Include="Resources\Drawable\star_grey45.png" />
+    <AndroidResource Include="Resources\Drawable\star_gold_selector.xml" />
+    <AndroidResource Include="Resources\Drawable\star_grey_selector.xml" />
+    <AndroidResource Include="Resources\Drawable\ndc.png" />
+    <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BindingTalk.Core\BindingTalk.Core.csproj">
+      <Project>{ecbed271-cdf3-4589-bb41-7a5f0ed8e5fa}</Project>
+      <Name>BindingTalk.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="googleplayservicesfroyo">
+      <Visible>False</Visible>
+      <Version>12.0.0</Version>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="Fody.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

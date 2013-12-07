@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="30sp"
+          android:textColor="#ffff00"
+          android:text="Warning: Speed tests need some tidy up/explanation - sorry!" />
+      <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Hit Go..." />
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Go" />
+        <TextView
+            android:id="@+id/timeTakenText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="" />
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="" />
+    </LinearLayout>
+</ScrollView>

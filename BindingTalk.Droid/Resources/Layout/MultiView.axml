@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+      android:layout_marginTop="40dp"
+      android:textColor="#ffff00"
+        android:text="First Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text TextValue1" />
+    <TextView
+      android:layout_marginTop="40dp"
+      android:textColor="#ffff00"
+        android:text="Second Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text TextValue2" />
+  <TextView
+    android:layout_marginTop="40dp"
+    android:textColor="#ffff00"
+      android:text="Full Name"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:textSize="40sp"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text TextValue1 + ' ' + TextValue2" />
+  <TextView
+    android:layout_marginTop="40dp"
+    android:textColor="#ffff00"
+      android:text="Checks:"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"/>
+  <CheckBox
+      android:text="Age check?"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Checked CheckValue1"/>
+  <CheckBox
+      android:text="Driving License check?"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+        local:MvxBind="Checked CheckValue2"/>
+  <TextView
+    android:layout_marginTop="40dp"
+    android:textColor="#ff0000"
+    android:textSize="40sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text If(Not(CheckValue1) || Not(CheckValue2), 'Missing Checks')"/>
+  <TextView
+    android:layout_marginTop="40dp"
+    android:textColor="#ffff00"
+      android:text="A Number:"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"/>
+  <SeekBar
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Progress DoubleValue1" />
+  <TextView
+    android:layout_marginTop="40dp"
+    android:textColor="#ff0000"
+    android:textSize="40sp"
+    android:text="Number is too small!"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Visible DoubleValue1 &lt; 50"/>
+</LinearLayout>

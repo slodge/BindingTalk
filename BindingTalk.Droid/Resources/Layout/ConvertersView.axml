@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <MvxSpinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        local:MvxBind="ItemsSource Choices;SelectedItem Value" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected is:" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        local:MvxBind="Text Value" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Converted is:" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        local:MvxBind="Text ConvertThis(Value),FallbackValue='White'" />
+    <ColoredView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        local:MvxBind="ShowColor ConvertThis(Value),FallbackValue='White'" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="FirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/FirstNameEdit"
+        android:textSize="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text FirstName" />
+    <TextView
+        android:text="FirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/SecondNameEdit"
+        android:textSize="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text SecondName" />
+    <Button
+        android:id="@+id/FullNameLabel"
+        android:textSize="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        local:MvxBind="Click Reset" />
+</LinearLayout>

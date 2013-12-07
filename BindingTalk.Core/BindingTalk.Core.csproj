@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECBED271-CDF3-4589-BB41-7A5F0ED8E5FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BindingTalk.Core</RootNamespace>
+    <AssemblyName>BindingTalk.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <FodyPath>..\packages\Fody.1.18.0.0</FodyPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AnimatedViewModel.cs" />
+    <Compile Include="ViewModels\ConvertersViewModel.cs" />
+    <Compile Include="ViewModels\CustomControlViewModel.cs" />
+    <Compile Include="ViewModels\FavoritesViewModel.cs" />
+    <Compile Include="ViewModels\FifthPrinciplesViewModel.cs" />
+    <Compile Include="ViewModels\FirstPrinciplesViewModel.cs" />
+    <Compile Include="ViewModels\FirstViewModel.cs" />
+    <Compile Include="ViewModels\FodyViewModel.cs" />
+    <Compile Include="ViewModels\FourthPrinciplesViewModel.cs" />
+    <Compile Include="ViewModels\FrenchTextSource.cs" />
+    <Compile Include="ViewModels\FrenchViewModel.cs" />
+    <Compile Include="ViewModels\FullCommandViewModel.cs" />
+    <Compile Include="ViewModels\German2ViewModel.cs" />
+    <Compile Include="ViewModels\GermanTextSource.cs" />
+    <Compile Include="ViewModels\GermanViewModel.cs" />
+    <Compile Include="ViewModels\IMvxValueConverter.cs" />
+    <Compile Include="ViewModels\MappingViewModel.cs" />
+    <Compile Include="ViewModels\MultiViewModel.cs" />
+    <Compile Include="ViewModels\NormalViewModel.cs" />
+    <Compile Include="ViewModels\PathViewModel.cs" />
+    <Compile Include="ViewModels\QuestionViewModel.cs" />
+    <Compile Include="ViewModels\SecondPrinciplesViewModel.cs" />
+    <Compile Include="ViewModels\SimpleNameValueConverter.cs" />
+    <Compile Include="ViewModels\Speed1ViewModel.cs" />
+    <Compile Include="ViewModels\Speed2ViewModel.cs" />
+    <Compile Include="ViewModels\Speed3ViewModel.cs" />
+    <Compile Include="ViewModels\Speed4ViewModel.cs" />
+    <Compile Include="ViewModels\Speed5ViewModel.cs" />
+    <Compile Include="ViewModels\Speed6ViewModel.cs" />
+    <Compile Include="ViewModels\Speed7ViewModel.cs" />
+    <Compile Include="ViewModels\SpeedViewModel.cs" />
+    <Compile Include="ViewModels\TestingValueConverter.cs" />
+    <Compile Include="ViewModels\ThinnerViewModel.cs" />
+    <Compile Include="ViewModels\ThirdPrinciplesViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\portable-win+net45+MonoAndroid+MonoTouch+sl40+wp71\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.0.14\lib\portable-win+net45+MonoAndroid+MonoTouch+sl40+wp71\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.FieldBinding">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.FieldBinding.3.0.14\lib\portable-win+net45+MonoAndroid+MonoTouch+sl40+wp71\Cirrious.MvvmCross.FieldBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\portable-win+net45+MonoAndroid+MonoTouch+sl40+wp71\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Color.3.0.14\lib\portable-win+net45+MonoAndroid+MonoTouch+sl40+wp71\Cirrious.MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FodyWeavers.xml" />
+    <Content Include="ToDo-MvvmCross\_ Core.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
